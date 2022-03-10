@@ -1,0 +1,193 @@
+@media (min-width: 1400px)
+	.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl
+		max-width: 1140px
+
+@media (max-width: 1200px)
+	.menu
+		&_list 
+			.menu_item
+				border-right: dotted black
+				padding-right: 13px
+	
+	.mobile
+		&_wrap
+			width: 296px
+
+@media (max-width: 992px)
+	.menu
+		&_list
+			padding: 13px 38px
+			.menu_item
+				border-right: dotted black
+				padding-right: 10px
+				.menu_link
+					font-size: 11px
+	.subheader
+		&_logo
+			img
+				width: 230px
+		&_call
+			font-size: 11px
+		&_tel
+			font-size: 19px
+		&_btn
+			width: 140px
+			font-size: 13px
+	h1
+		font-size: 45px
+	.promo
+		&_welcome
+			font-size: 27px
+	.causes 
+		.info_wrap
+			flex-direction: column
+			align-items: center
+			.causes_info
+				margin-top: 15px
+	.mobile
+		&_wrap
+			width: 215px
+			height: 210px
+			padding-top: 35px
+			&_text
+				font-size: 15px
+	.choice
+		img
+			width: 500px 
+
+	footer
+		.footer_row
+			&_1
+				width: 25%
+			&_2
+				.footer_menu
+					a
+						font-size: 12px
+			&_3
+				width: 20%
+	.cities
+		min-height: 590px
+
+@media (max-width: 767px)
+	.menu
+		&_list
+			flex-direction: column
+			padding: 13px 38px
+			position: fixed
+			height: 100vh
+			width: 50%
+			left: -100%
+			top: 0px
+			background-color: rgba(0, 0, 0, .8)
+			justify-content: center
+			align-items: center
+			padding: 0
+			transition: 0.6s all
+			&_active
+				left: 0
+			.menu_item
+				margin: 10px
+				.menu_link
+					font-size: 20px
+	.hamburger
+		display: block
+		position: absolute
+		right: 20px
+		top: 50%
+		transform: translateY(-50%)
+		width: 30px
+		height: auto
+		span
+			display: block
+			width: 100%
+			height: 3px
+			background-color: #fff
+			margin-top: 5px
+			transition: 0.5s all
+			&:nth-last-child(3)
+				margin-top: 0px
+		&_active
+			span
+				margin-top: -2px
+				&:nth-child(1)
+					transform: translateY(1px) rotate(-45deg)
+				&:nth-child(2)
+					display: none
+				&:nth-child(3)
+					transform: translateY(0px) rotate(45deg)					
+	.xs_none
+		display: none
+	.xs_visible
+		display: block
+	.subheader_btn
+		float: right
+		margin: 5px
+		height: 40px
+	.promo
+		h1
+			line-height: 45px
+		&_welcome
+			font-size: 22px
+	footer
+		.footer_row
+			flex-direction: column
+		.footer_row_1
+			width: 100%
+			justify-content: center
+		.footer_row_2
+			margin-top: 15px
+			width: auto
+		.footer_row_3
+			margin: 15px 0 0 0
+			width: auto
+
+@media (max-width: 575px)
+	.choice
+		img
+			width: 100%
+	footer
+		.footer_row_2
+			.footer_menu,.footer_submenu
+				flex-direction: column
+				a
+					line-height: 20px
+	.subheader
+		height: 60px
+		&_logo
+			img
+				width: 100%
+		.subheader_tel
+			font-size: 14px
+			margin: 0px 6px 0 0
+		&_btn
+			margin: 1px 5px 0 0
+			height: 30px
+	.promo
+		min-height: 400px
+		padding: 120px 0 40px 0
+		h1
+			font-size: 30px
+			line-height: 35px
+		&_welcome
+			font-size: 16px
+			line-height: 20px
+		&_text
+			display: none
+		&_btn
+			margin-top: 50px
+			font-size: 15px
+			width: 200px
+			height: 45px
+	.header, .mobile_header, .choice_header
+		font-size: 24px
+		line-height: 30px
+	.causes
+		.info_wrap
+			.causes_info
+				margin-left: 0px
+		&_img
+			margin: 0 !important
+	.choice
+		padding: 56px 0 45px 0
+	.menu_list
+		width: 100%
